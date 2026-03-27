@@ -1,0 +1,166 @@
+/* 1. Variables Globales y Reset*/
+:root {
+    --bg-oscuro: #0a0e17;
+    --texto-claro: #e2e8f0;
+    --verde-ciber: #00e676;
+    --gris-panel: #1e293b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    background-color: var(--bg-oscuro);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+/* 2. Cabecera y Navegación (Uso de Flexbox) */ 
+header {
+    background-color: var(--gris-panel);
+    padding: 1rem 5%;
+    display: flex; /* Flexbox para alinear elemtos horizontalmente*/
+    justify-content: space-between; /* Separa el logo del del menú */
+    align-items: center; /* Centra verticalmente */
+    border-bottom: 2px solid var(--verde-ciber);
+}
+
+header h1 {
+    color: var(--verde-ciber);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none; /* Elimina las viñetas de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: var(--texto-claro);
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--verde-ciber);
+}
+
+/* 3. Contenedor Principal y Títulos */
+main {
+    padding: 2rem 5%;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--texto-claro);
+}
+
+section h3 {
+    color: var(--verde-ciber);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gris-panel);
+    padding-bottom: 0.5rem;
+}
+
+/* 4. Cuadrícula de Servicios (CSS Grid) */
+section {
+    display: grid;
+    /* Crea columnas que se adaptan automáticamente a un mínimo de 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+/* 5. Tarjetas de Producto (Cards) */
+article {
+    background-color: var(--gris-panel);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #2a3b52;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display:flex;
+    flex-direction: column; /* Apila el contenido de la tarjeta verticalmente */
+}
+
+/* Efecto interactivo al pasar el mouse (Hover) */
+article:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2);
+    border-color: var(--verde-ciber);
+}
+
+article h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+/* Botones de Acción */
+button {
+    background-color: var(--verde-ciber);
+    color: var(--bg-oscuro);
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Empuja el botón siempre al fondo de la tarjeta */
+}
+
+button:hover {
+    background-color: #00c853; /* Un verde ligeramente más oscuro al hacer clic */
+}
+
+/* 7. Panel del Carrito de Compras */
+#carrito-compras {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--gris-panel);
+    border-radius: 8px;
+    border: 1px solid var(--verde-ciber);
+}
+
+#carrito-compras h3 {
+    color: var(--verde-ciber);
+    margin-bottom: 1rem;
+    border: none; /* Sobrescribe la regla de section h3 */
+}
+
+#lista-carrito {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+#lista-carrito li {
+    margin-bottom: 0.5rem;
+    color: var(--texto-claro);
+}
+
+#mensaje-vacio {
+    color: #94a3b8 !important;
+    font-style: italic;
+}
+
+.total-contenedor {
+    border-top: 1px solid #2a3b52;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+#btn-procesar-pago {
+    width: 100%;
+}

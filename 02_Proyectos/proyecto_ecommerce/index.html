@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@MauricioSec | Servicios SOC y Desarrollo Full Stack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MauricioSec</h1>
+        <nav>
+            <ul>
+                <li><a href="#auditorias">Auditorías SOC</a></li>
+                <li><a href="#desarrollo">Desarrollo Web</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Catálogo de Servicios Digitales</h2>
+        <section id="auditorias">
+            <h3>Auditorías de Ciberseguridad</h3>
+
+            <article>
+                <h4>Análisis de Vulnerabilidades Web (OWASP)</h4>
+                <p>Escaneo automatizado y reporte detallado de fallos de seguridad en aplicaciones web.</p>
+                <p>Precio: $150.000 CLP</p>
+                <button type="button">Añadir al Carrito</button>
+            </article>
+
+            <article>
+                <h4>Pentesting de Infraestructura</h4>
+                <p>Prueba de intrusión manual para detectar brechas en redes corporativas</p>
+                <p>Precio: $350.000 CLP</p>
+                <button type="button">Añadir al Carrito</button>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="desarrollo">
+            <h3>Desarrollo Web Seguro</h3>
+
+            <article>
+                <h4>Implementación de Pasarela Webpay</h4>
+                <p>Integración segura de Transbank en e-commerce existentes con validación backend</p>
+                <p>Precio: $200.000 CLP</p>
+                <button type="button">Añadir al Carrito</button>
+            </article>
+        </section>
+       <aside id="carrito-compras">
+            <h3>Carrito de Compras</h3>
+            
+            <ul id="lista-carrito">
+                <li id="mensaje-vacio">El carrito está vacío.</li>
+            </ul>
+
+            <div class="total-contenedor">
+                <strong>Total estimado: <span id="total-carrito">$0 CLP</span></strong>
+            </div>
+
+            <button id="btn-procesar-pago">Proceder al Pago</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MauricioSEC. Todos los derechos reservados</p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
