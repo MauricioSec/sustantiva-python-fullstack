@@ -1,0 +1,44 @@
+<!-- !DOCTYPE> informa al navegador qué versión de HTML se usó para escribir el documento. Doctype es una declaración no una etiqueta -->
+<!DOCTYPE html>
+<!-- html es el contenedor principal de toda la página web. Actúa como el límite físico del documento -->
+<!-- lang="es" es un metadato que le indica explícitamente a los navegadores web, motores de búsqueda y a las tecnologías de asistencia que el idioma principal del texto contenido en la página es el español -->
+<html lang="es">
+     <!-- head es un contenedor de metadatos. No renderiza nada visualmente en la pantalla de navegador, pero configura las reglas del juego para todo lo que viene despues -->
+    <head>
+         <!-- meta charset="UTF-8" es el traductor de símbolos. Le dice al navegador "usa el abecedario universal para que las eñes, las tíldes y los símbolos especiales se vean perfectos en cualquier pantalla del mundo" -->
+        <meta charset="UTF-8">
+         <!-- title es la etiqueta de la pestaña. Es el nombre oficial de la página web, que le dice al mundo de que trata el sitio antes de entrar a verlo -->
+        <title>Mi Primera Web</title>
+        <!-- link rel="stylesheet" href=" Sirve para vincular el documento HTML actual con un archivo de recursos externo; en este caso específico, enlaza la hoja de estilos CSS que define el diseño visual -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <!-- body es el escenario de la web. Es la parte del código donde ponemos todo lo que queremos que el cliente vea (imágenes, botones, precios, texto, etc) -->
+    <body>
+         <!-- header es la cabecera visual. Es la franja superior de la página donde ponemos el nombre de la tienda y el menú para que los clientes puedan navegar por los productos sin perderse -->
+        <header>
+            <!-- h1 es el título principal. Es el encabezado más importante de toda la página, es como el nombre de un libro en la portada, le dice a todo el mundo de qué trata el contenido que viene a continuación -->
+            <h1>@MauricioSec | Ciberseguridad</h1>
+             <!-- "p" es el contenedor de historias. Es la etiqueta que se usa cada vez que se quiere escribir una oración o un párrafo normal para explicarle algo a los usuarios, al igual que lo haría en un libro o una noticia. -->
+            <p>Protegiendo activos digitales con soluciones de vanguardia.</p>
+        </header>
+
+        <!-- <section>: Es una sección estructural que contiene información principal y agrupa bloques de contenido que están relacionados temáticamente -->
+        <section>
+            <!-- <article>: Define un bloque de contenido autónomo e independiente; es decir, información que por sí sola tiene sentido y podría ser distribuida o reutilizada fuera de este documento -->
+            <article>
+                <img src="./assets/img/candado_digital.png" alt="candado digital futurista">
+            </article>
+        </section>
+
+        <!-- <aside>: Representa una columna o sección lateral que contiene datos relacionados con la información principal, pero que actúan como contenido complementario o secundario -->
+        <aside>
+
+            <p>Servicio disponible 24/7 para emergencias de seguridad</p>
+        </aside>
+
+        <!-- <footer>: Es la estructura elemental para cerrar el documento o una sección; provee un final lógico y suele contener información de derechos de autor, autoría o enlaces de navegación de cierre -->
+        <footer>
+            <p>&copy; 2026 MauricioSec - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>

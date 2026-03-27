@@ -1,0 +1,11 @@
+/* Paso 5a: Fondo claro similar a lightblue requerido */
+body {
+    background-color: lightblue;
+}
+
+/* Paso 5c: Medidas estrictas de imagen y resolución de proporción */
+.img-custom {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}

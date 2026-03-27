@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE> informa al navegador qué versión de HTML (o XML) se usó para escribir el documento. Doctype es una declaración no una etiqueta. -->
+<!DOCTYPE html>
+<!-- <html>: Es el elemento raíz o contenedor principal absoluto del documento. Todo el código estructural, de configuración y visual de la página web (a excepción de la declaración DOCTYPE) debe estar encapsulado obligatoriamente dentro de esta etiqueta. -->
+<!-- lang="es": Es un atributo de accesibilidad y optimización (SEO). Le declara explícitamente a los navegadores web, motores de búsqueda y lectores de pantalla que el idioma principal del contenido es el español. -->
+<html lang="es">
+    <!-- <head>: Es el contenedor de metadatos, enlaces y configuración del documento HTML. Su propósito es proveer instrucciones al motor del navegador web y a los motores de búsqueda. -->
+    <head>
+        <!-- <meta>: Es una etiqueta vacía (no tiene etiqueta de cierre) que proporciona metadatos; es decir, "información sobre la información" del documento HTML. Estos datos no son visibles para el usuario, pero son leídos y ejecutados por el motor del navegador. -->
+        <!-- charset="UTF-8": Es el atributo que declara la codificación de caracteres. UTF-8 es el estándar universal. Le indica al navegador exactamente cómo debe traducir el código a texto legible, garantizando que caracteres como la "ñ", las tildes y otros símbolos se visualicen de manera perfecta en cualquier sistema operativo o dispositivo. -->
+        <meta charset="UTF-8">
+        <!-- <title>: Define el título oficial y representativo del documento HTML. Este texto no se renderiza dentro del cuerpo de la página web, sino que se muestra exclusivamente en la pestaña superior del navegador web, se utiliza como el nombre por defecto al guardar la página en marcadores (favoritos) y es el enlace principal que leen los motores de búsqueda en sus resultados (vital para el SEO). -->
+        <title>Mi Primera Web</title>
+    </head>
+<!-- <body>: Es el contenedor raíz que envuelve todo el contenido renderizable y perceptible del documento HTML. -->
+<body>
+    <!-- <header>: Es una etiqueta semántica estructural que representa un grupo de contenido introductorio o un conjunto de enlaces de navegación para su contenedor principal o para la página entera. -->
+    <header>
+        <!-- <h1>: Representa el encabezado principal y de mayor jerarquía del documento. Por normas de arquitectura de la información, solo debe existir un único <h1> por página, ya que establece el tema central absoluto o el nombre del sitio. -->
+        <h1>@MauricioSec</h1>
+        <!-- <h2>: Representan subtítulos jerárquicos. El <h2> introduce una sección subordinada al <h1>. Organizan la información lógicamente, operando de la misma forma que el índice de un manual técnico. -->
+        <h2>De la sala de Máquinas y el Puente de Mando, al Desarrollo Web.</h2>
+        <!-- <p>: Define un bloque de texto estándar que forma un párrafo. Es el contenedor base para la lectura de oraciones. El motor del navegador aplica automáticamente un margen estructural superior e inferior a esta caja para separar visualmente la información. -->
+        <p>En este módulo espero aprender las capacidades necesarias para aprender desarrollo y aplicaciones web.</p>
+    </header>
+    <!-- <section>: Define una sección estructural del documento que agrupa contenido relacionado temáticamente. -->
+    <section>
+        <!-- <article>: Define una composición de contenido completamente autónoma e independiente, que tiene sentido por sí sola y podría ser redistribuida (por ejemplo, una entrada de blog o la ficha de un producto). Debe ir anidada dentro de un <section>. -->
+        <article>
+            <p>Primer registro de desarrollo: Construcción de la arquitectura base en HTML5. <br>El objetivo a corto plazo es dominar la estructuración estática del Front-End para, en fases posteriores,<br> integrar la lógica de servidor y el procesamiento de datos mediante frameworks de Python, asegurando y versionando cada avance en repositorios de código.</p>
+        </article>    
+    </section>
+    <!-- <aside>: Representa una sección de la página cuyo contenido está tangencialmente relacionado con el contenido principal (funciona habitualmente como una barra lateral con enlaces o datos complementarios). -->
+    <aside>
+        <p>Stack tecnológico en aprendizaje: HTML5, CSS3 y fundamentos de Python. Foco paralelo continuo: Análisis SOC y seguridad defensiva.</p>
+    </aside>
+    <!-- <footer>: Define el pie de un documento o de una sección específica. Se utiliza para cerrar lógicamente el flujo de información, albergando frecuentemente derechos de autor, información de contacto o enlaces legales. -->
+    <footer>
+        <p>&copy; 2026 MauricioSec. De tripulante de máquinas a desarrollador Full Stack.</p>
+    </footer>
+</body>
+</html>

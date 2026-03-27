@@ -1,0 +1,99 @@
+/* Variables y Reset Base */
+:root {
+    --bg-oscuro: #0a0e17;
+    --texto-claro: #e2e8f0;
+    --verde-ciber: #00e676;
+    --gris-panel: #1e293b;
+    --rojo-alerta: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-body {
+    background-color: var(--bg-oscuro);
+    color: var(--texto-claro);
+}
+
+/* Uso de Flexbox para centrado absoluto en el Viewport */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Box Model del Formulario */
+.login-box {
+    background-color: var(--gris-panel);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #2a3b52;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaciado uniforme entre elementos */
+}
+
+.login-box h2 {
+    text-align: center;
+    color: var(--verde-ciber);
+    margin-bottom: 0.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #94a3b8;
+}
+
+.input-group input {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #2a3b52;
+    background-color: #0f172a;
+    color: var(--texto-claro);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--verde-ciber);
+}
+
+#btn-ingresar {
+    background-color: var(--verde-ciber);
+    color: var(--bg-oscuro);
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+#btn-ingresar:hover {
+    background-color: #00c853;
+}
+
+/* Reserva de espacio estructural */
+#mensaje-estado {
+    text-align: center;
+    font-size: 0.85rem;
+    min-height: 1.2rem; /* Evita que el formulario cambie de tamaño al inyectar texto */
+    font-weight: bold;
+}

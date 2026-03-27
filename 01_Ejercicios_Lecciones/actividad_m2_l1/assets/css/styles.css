@@ -1,0 +1,17 @@
+/* Lección 3, Ejercicio 2: Fondo celeste */
+body {
+    background-color: lightblue;
+}
+
+/* Lección 3, Ejercicio 3: Títulos en rojo */
+h1 {
+    color: red;
+}
+
+/* Lección 3, Ejercicio 4: Imagen de 400x300, centrada */
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
