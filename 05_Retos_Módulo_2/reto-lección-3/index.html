@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de prueba de HTML5</title> <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .contenedor-principal {
+            width: 960px; /*  */
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center; /* [cite: 180] */
+            font-size: 1.6rem;
+            margin: 20px 0;
+        }
+        h2 {
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 8px 15px;
+            border-bottom: 1px solid #000;
+            font-size: 1.1rem;
+            border-top: 1px solid #000;
+        }
+        h2.primero { border-top: none; }
+
+        .seccion-superior {
+            display: flex; /*  */
+        }
+        .columna-lateral {
+            width: 260px; /*  */
+            border-right: 1px solid #000;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .columna-principal {
+            width: 700px; /*  */
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .texto-tres-columnas {
+            column-count: 3; /*  */
+            column-gap: 25px;
+            padding: 15px;
+            text-align: justify;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        p { margin: 0 0 10px 0; font-size: 0.9rem; }
+        .negrita { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>HTML & CSS: Curso práctico avanzado</h1>
+
+        <div class="seccion-superior">
+            <aside class="columna-lateral">
+                <h2 class="primero">Datos del libro</h2>
+                <div style="padding: 15px 0;">
+                    <p><span class="negrita">Título:</span> HTML & CSS Curso práctico avanzado</p>
+                    <p><span class="negrita">Autor:</span> Sergio Luján Mora</p>
+                    <p><span class="negrita">Editorial:</span> Publicaciones de la Universidad de Alicante</p>
+                    <p><span class="negrita">Año de publicación:</span> 2015</p>
+                    <p><span class="negrita">ISBN:</span> 978-84-944049-4-8</p>
+                </div>
+            </aside>
+            
+            <section class="columna-principal">
+                <h2 class="primero">Descripción del libro</h2>
+                <div style="padding: 15px 0;">
+                    <p>Internet ha cambiado de forma radical la forma en la que nos comunicamos y accedemos a la información. En pocos años la Web ha evolucionado de páginas sencillas con pocas imágenes a contenidos dinámicos y complejos que provienen de bases de datos.</p>
+                    <p>Todas las páginas web están construidas con la misma tecnología: el Lenguaje de Marcado de Hipertexto (HTML) y las Hojas de Estilo en Cascada (CSS). Este libro es adecuado para cualquiera que tenga interés en aprender a crear sus propias páginas web.</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="seccion-inferior">
+            <h2>Contenido del libro</h2>
+            <div class="texto-tres-columnas">
+                <p>El contenido de este libro se ha estructurado en cuatro grandes bloques bien diferenciados que cubren todo el espectro del desarrollo web.</p>
+                <p>En la primera parte del libro se trabajan conceptos necesarios para desarrollar páginas web, como los principios de diseño, usabilidad y accesibilidad web. Se detalla cómo planificar el sitio web antes de escribir código.</p>
+                <p>En la segunda parte se explica a fondo HTML. Partiendo de las etiquetas básicas para definir el texto, se explican las etiquetas modernas de HTML5, incluyendo formularios, tablas y contenido multimedia.</p>
+                <p>En la tercera parte se aborda CSS, el lenguaje que permite definir el aspecto visual. Se explica cómo utilizar el color, las fuentes, los fondos y cómo definir la presentación de las tablas y los formularios.</p>
+                <p>Por último, en la cuarta parte se explica cómo publicar el sitio web en un servidor real, pasando por el concepto de estándares web generales que definen su funcionamiento como W3C.</p>
+                <p>El libro incluye numerosos ejemplos prácticos y ejercicios que permiten al lector aplicar los conocimientos adquiridos de forma inmediata en proyectos reales.</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
