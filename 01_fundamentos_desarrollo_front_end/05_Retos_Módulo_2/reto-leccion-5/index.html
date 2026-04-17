@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto: Botón Contador</title>
+    <style>
+        /* Centrado absoluto para la presentación del reto */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Estilos estructurales replicando el mockup visual */
+        .boton-contador {
+            background-color: #40D0C0; /* Tono turquesa */
+            color: #ffffff; /* Texto blanco */
+            font-size: 6rem;
+            font-family: Arial, sans-serif;
+            border: 2px solid #30B0A0; /* Borde sutil para definición */
+            border-radius: 12px; /* Bordes redondeados */
+            width: 180px;
+            height: 250px;
+            cursor: pointer;
+            
+            /* Transición para el feedback visual */
+            transition: transform 0.1s ease, background-color 0.2s ease;
+            
+            /* Evita que el usuario seleccione el texto al hacer clics rápidos */
+            user-select: none; 
+        }
+
+        /* Comportamiento al hacer clic (simula hundimiento) */
+        .boton-contador:active {
+            transform: scale(0.95);
+            background-color: #35BDB0;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-sumar" class="boton-contador">0</button>
+
+    <script>
+        // 1. Captura del nodo del DOM (similar a nuestro ejercicio anterior)
+        const botonElement = document.getElementById('btn-sumar');
+        
+        // 2. Inicialización de la variable de estado
+        let contador = 0;
+
+        // 3. Escuchador de eventos
+        botonElement.addEventListener('click', function() {
+            contador++; // Incremento matemático
+            botonElement.textContent = contador; // Inyección del nuevo valor en el HTML
+        });
+    </script>
+
+</body>
+</html>

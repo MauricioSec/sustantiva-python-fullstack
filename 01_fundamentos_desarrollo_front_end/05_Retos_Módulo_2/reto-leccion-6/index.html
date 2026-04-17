@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Lección 6 - jQuery</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <a href="https://www.google.com" id="link-redireccion">Ir a Google</a>
+
+    <script>
+        // 2. Esperamos a que el DOM esté completamente construido antes de actuar
+        $(document).ready(function() {
+            
+            // 3. Interceptamos el evento de clic en el elemento con el ID especificado
+            $('#link-redireccion').click(function(evento) {
+                
+                // IMPORTANTE: Bloqueamos la navegación nativa del HTML
+                evento.preventDefault();
+                
+                // 4. Mostramos la alerta síncrona requerida en el reto
+                alert("Has pulsado el enlace... Ahora seras redireccionado a Google");
+                
+                // 5. Extraemos el destino usando jQuery y forzamos la redirección programática
+                let destino = $(this).attr('href');
+                window.location.href = destino;
+            });
+            
+        });
+    </script>
+
+</body>
+</html>

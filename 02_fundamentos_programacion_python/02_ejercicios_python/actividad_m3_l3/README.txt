@@ -1,0 +1,8 @@
+Respuestas a las preguntas de la Actividad N° 3:
+
+1. ¿Qué tipo de condición te resultó más intuitiva?
+Sinceramente, al principio me costó un poco acostumbrarme a los espacios y tabulaciones (la indentación), pero la estructura que me pareció mucho más fácil e intuitiva fue la decisión múltiple con 'elif' (la que usamos en el ejercicio de las calificaciones). Me gustó porque permite poner varias opciones una debajo de la otra de forma súper ordenada. Cuando hice el ejercicio de las condicionales anidadas (el if dentro de otro if), me di cuenta de que el código se empieza a ver un poco enredado visualmente si meto muchas cosas hacia la derecha. Con 'elif', el flujo de las decisiones se lee casi como si estuviera leyendo las instrucciones en español.
+
+2. ¿En qué caso usarías condicionales anidadas en un programa real?
+Pensándolo como usuario de aplicaciones, creo que usaría un condicional anidado en situaciones donde necesito que el programa compruebe las cosas paso a paso, como por ejemplo en el inicio de sesión de una página web. 
+Me imagino un primer 'if' que revise si el nombre de usuario existe en el sistema. Solo si esa primera condición se cumple (es verdadera), recién ahí usaría un 'if' anidado adentro para comprobar si la contraseña ingresada es la correcta. Siento que tiene sentido hacerlo así para que el programa no pierda recursos intentando validar una contraseña si el usuario ni siquiera está registrado.
