@@ -1,0 +1,56 @@
+@startuml
+' Configuración visual básica (opcional pero recomendada)
+skinparam classAttributeIconSize 0
+hide circle
+
+' 1. DEFINICIÓN DE CLASES, ATRIBUTOS Y MÉTODOS
+class Persona {
+  # rut: str
+  - nombre: str
+  - email: str
+  + get_nombre(): str
+  + set_email(nuevo_email: str): void
+}
+
+class Alumno {
+  - matricula: str
+  + inscribir_asignatura(asignatura: Asignatura): boolean
+}
+
+class Profesor {
+  - especialidad: str
+  + asignar_asignatura(asignatura: Asignatura): void
+}
+
+class Asignatura {
+  - codigo: str
+  - nombre: str
+  + get_detalles(): str
+}
+
+class Curso {
+  - nombre_seccion: str
+  + agregar_alumno(alumno: Alumno): void
+}
+
+class Calificacion {
+  - valor_nota: float
+  - fecha: date
+  + get_nota(): float
+}
+
+' 2. DEFINICIÓN DE RELACIONES UML
+' Herencia: Subclase --|> Superclase (Flecha hueca)
+Persona <|-- Alumno
+Persona <|-- Profesor
+
+' Agregación: Todo o-- Parte (Rombo hueco)
+Curso "1" o-- "1..*" Alumno : agrupa >
+
+' Composición: Todo *-- Parte (Rombo sólido)
+Asignatura "1" *-- "0..*" Calificacion : contiene >
+
+' Asociación simple (Línea continua)
+Profesor "1" -- "0..*" Asignatura : dicta >
+Alumno "1" -- "0..*" Calificacion : posee >
+@enduml

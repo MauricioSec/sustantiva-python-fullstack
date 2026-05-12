@@ -1,0 +1,4 @@
+Entregable: Actividad N° 1 - Introducción a la POO
+
+¿Qué te pareció más interesante o diferente respecto a cómo habías programado antes?
+Lo más interesante es el cambio radical en el enfoque arquitectónico: pasar de escribir rutinas y secuencias aisladas a diseñar herramientas modulares. Desde la perspectiva del análisis de ciberseguridad, veo que la POO permite aislar componentes (por ejemplo, modelar una clase "AnalizadorSOC" o "AlertaDeRed"), manteniendo las variables encapsuladas y reduciendo drásticamente la vulnerabilidad a errores de estado que se generan al manipular variables globales en la programación estructurada.
