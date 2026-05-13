@@ -1,0 +1,4 @@
+Línea 1: Registro inicial de seguridad del SOC.
+Línea 2: Análisis de vulnerabilidades perimetrales completado.
+Línea 3: Monitoreo de red activo.
+Línea 4: Alerta de acceso no autorizado detectada.
