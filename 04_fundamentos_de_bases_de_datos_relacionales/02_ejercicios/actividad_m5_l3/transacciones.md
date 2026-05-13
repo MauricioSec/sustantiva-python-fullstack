@@ -14,5 +14,5 @@ Una transacción es una unidad lógica de procesamiento que agrupa una o más op
 ### Ejercicio 1: Uso de ROLLBACK
 ```sql
 BEGIN;
-UPDATE pedidos SET total = 500000 WHERE id = 1;
+UPDATE pedidos SET total = 0 WHERE id = 1;
 ROLLBACK;
