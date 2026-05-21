@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce MVP - Seguridad</title>
+</head>
+<body>
+    <nav>
+        {% if user.is_authenticated %}
+            <span>Hola, {{ user.username }}</span> | 
+            <a href="{% url 'dashboard' %}">Mi Panel</a> | 
+            <form action="{% url 'logout' %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" style="background:none; border:none; color:blue; cursor:pointer; text-decoration:underline;">Cerrar Sesión</button>
+            </form>
+        {% else %}
+            <a href="{% url 'login' %}">Iniciar Sesión</a> | 
+            <a href="{% url 'registro' %}">Registrarse</a>
+        {% endif %}
+    </nav>
+    <hr>
+    
+    <main>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li style="color: green;">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
