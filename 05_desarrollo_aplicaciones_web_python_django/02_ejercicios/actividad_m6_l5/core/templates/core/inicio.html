@@ -1,0 +1,9 @@
+<h2>Página de Inicio (Acceso Público)</h2>
+<p><a href="{% url 'privado' %}">Ir al Panel Privado</a></p>
+<p><a href="{% url 'avanzado' %}">Ir al Panel Avanzado</a></p>
+<hr>
+<a href="{% url 'login' %}">Iniciar Sesión</a> | 
+<form action="{% url 'logout' %}" method="post" style="display:inline;">
+    {% csrf_token %}
+    <button type="submit">Cerrar Sesión</button>
+</form>

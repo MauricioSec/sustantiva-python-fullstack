@@ -1,0 +1,10 @@
+{% extends 'bitacora/base.html' %}
+
+{% block contenido %}
+    <h3>Registrar Nueva Inspección</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar Inspección</button>
+    </form>
+{% endblock %}

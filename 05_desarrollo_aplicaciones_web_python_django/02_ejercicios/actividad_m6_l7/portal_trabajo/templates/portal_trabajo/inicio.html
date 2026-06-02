@@ -1,0 +1,38 @@
+{% extends 'portal_trabajo/base.html' %}
+
+{% block contenido %}
+<div class="row">
+    <div class="col-12 mb-4">
+        <h2>Ofertas de Embarque Activas</h2>
+        <p class="text-muted">Encuentra oportunidades en Marina Mercante, Naves Menores y Pesca.</p>
+    </div>
+    
+    {% for oferta in ofertas %}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm border-primary">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">{{ oferta.cargo_solicitado.nombre }}</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Nave/Proyecto:</strong> {{ oferta.nave_o_proyecto }}</p>
+                <p><strong>Ubicación:</strong> {{ oferta.ubicacion }}</p>
+                <p class="card-text">{{ oferta.descripcion }}</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <small class="text-muted">Publicado el: {{ oferta.fecha_publicacion|date:"d M Y" }}</small>
+    
+                {% if user.is_authenticated %}
+                    <button class="btn btn-success btn-sm float-end">Postular ahora</button>
+                {% else %}
+                    <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-sm float-end">Inicia sesión para postular</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-info">Actualmente no hay ofertas de empleo publicadas en el sistema.</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'actividad_m6_l4/base.html' %}
+{% block content %}
+    {% if exito %}<p style="color: green;">{{ exito }}</p>{% endif %}
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+{% endblock %}

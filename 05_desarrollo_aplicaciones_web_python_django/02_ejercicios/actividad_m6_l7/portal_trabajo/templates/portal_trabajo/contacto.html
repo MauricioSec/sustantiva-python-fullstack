@@ -1,0 +1,28 @@
+{% extends 'portal_trabajo/base.html' %}
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2>Contacto Administrativo</h2>
+        <p>Utilice este formulario avanzado para solicitar ascensos de grado o soporte.</p>
+        <form class="card p-4 shadow-sm">
+            <div class="mb-3">
+                <label class="form-label">Asunto Operativo</label>
+                <select class="form-select">
+                    <option>Problemas con libreta de embarque</option>
+                    <option>Soporte técnico plataforma</option>
+                    <option>Denuncia de oferta laboral falsa</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mensaje Detallado</label>
+                <textarea class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Adjuntar Documento (Opcional)</label>
+                <input class="form-control" type="file">
+            </div>
+            <button type="submit" class="btn btn-success">Enviar Solicitud</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Inspección Marítima</title>
+</head>
+<body>
+    <header>
+        <h2>Bitácora de Inspección Técnica</h2>
+        <nav>
+    <a href="{% url 'inicio' %}">Inicio</a> |
+    <a href="{% url 'registrar_inspeccion' %}">Registrar Inspección</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block contenido %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>Sistema de control interno - Registro de actividades.</p>
+    </footer>
+</body>
+</html>
