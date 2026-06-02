@@ -6,3 +6,5 @@ db.sqlite3
 # Archivos de caché
 __pycache__/
 *.pyc
+# Carpeta con documentación
+01_documentos_actividades/
