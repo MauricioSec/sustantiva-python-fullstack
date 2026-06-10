@@ -1,10 +1,17 @@
 # Entornos virtuales
-env/
 venv/
-# Base de datos local
-db.sqlite3
-# Archivos de caché
+env/
+.env
+
+# Archivos de caché de Python
 __pycache__/
 *.pyc
-# Carpeta con documentación
-01_documentos_actividades/
+*.pyo
+
+# Archivos de base de datos local (muy importante)
+db.sqlite3
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+.DS_Store
