@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Libro
 
-# Register your models here.
+# Registramos el modelo para que sea visible en el panel de administración
+admin.site.register(Libro)
